@@ -1,0 +1,183 @@
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #f7f7f7;
+}
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(52, 144, 52);
+}
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+.login-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(52, 144, 52);
+}
+.login-form .form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(52, 144, 52);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.login-form button:hover {
+    background: rgb(40, 110, 40);
+}
+.login-form .form-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.login-form .form-footer a {
+    color: rgb(52, 144, 52);
+    text-decoration: none;
+}
+.login-form .form-footer a:hover {
+    text-decoration: underline;
+}
+
+.register-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #f7f7f7;
+}
+.register-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+.register-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(52, 144, 52);
+}
+.register-form .form-group {
+    margin-bottom: 15px;
+}
+.register-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(52, 144, 52);
+}
+.register-form .form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(52, 144, 52);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.register-form button:hover {
+    background: rgb(40, 110, 40);
+}
+.register-form .form-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.register-form .form-footer a {
+    color: rgb(52, 144, 52);
+    text-decoration: none;
+}
+.register-form .form-footer a:hover {
+    text-decoration: underline;
+}
+
+.create-order-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #f7f7f7;
+}
+.create-order-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+.create-order-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(52, 144, 52);
+}
+.create-order-form .form-group {
+    margin-bottom: 15px;
+}
+.create-order-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(52, 144, 52);
+}
+.create-order-form .form-group input,
+.create-order-form .form-group select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.create-order-form button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(52, 144, 52);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.create-order-form button:hover {
+    background: rgb(40, 110, 40);
+}
+.create-order-form .form-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.create-order-form .form-footer a {
+    color: rgb(52, 144, 52);
+    text-decoration: none;
+}
+.create-order-form .form-footer a:hover {
+    text-decoration: underline;
+}

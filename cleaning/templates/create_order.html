@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'form.css' %}">
+{% endblock styles %}
+
+{% block content %}
+<div class="create-order-form-container">
+    <form method="post" class="create-order-form">
+        <h2>Создать заказ</h2>
+        {% csrf_token %}
+        {% for field in order_form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}
+                    <div class="error">{{ field.errors }}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+        <button type="submit">Создать заказ</button>
+    </form>
+</div>
+{% endblock content %}

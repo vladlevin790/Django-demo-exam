@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock styles %}
+
+{% block content %}
+<article class="orders-history">
+    <h2>История заявок</h2>
+    {% if orders == 'Здесь пока пустота' %}
+        <p class="else">{{orders}}</p>
+    {% else %}
+    <div>
+        {%for order in orders%}
+            <article>
+                <h2>Вид услуги: {{ order.service_id }}</h2>
+                <p><span>Адрес:</span> {{ order.address }}</p>
+                <p><span>Тип оплаты:</span> {{ order.get_payment_type_display }}</p>
+                <p><span>Статус:</span> {{ order.get_status_display }}</p>
+                <p><span>Дата и время:</span> {{ order.date_time }}</p>
+                <p><span>Котактная информация:</span> {{ order.contact_data }}</p>
+            </article>
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>
+{% endblock content %}

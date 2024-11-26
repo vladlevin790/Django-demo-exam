@@ -1,0 +1,61 @@
+.orders-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.orders-history > h2 {
+    font-size: 36px;
+    color: rgb(52, 144, 52);
+    margin-bottom: 20px;
+}
+
+.orders-history > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+    background: rgba(116, 116, 116, 0.059);
+    border-radius: 20px;
+}
+
+.orders-history > div > article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid rgb(52, 144, 52);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 2px 3px rgba(24, 24, 24, 0.442);
+}
+
+.orders-history > div > article > h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: rgb(52, 144, 52);
+}
+
+.orders-history > div > article > p {
+    font-size: 16px;
+    color: #333;
+}
+
+.orders-history > div > article > p > span {
+    color: rgba(24, 143, 24, 0.883);
+}
+
+.else {
+    color: rgba(24, 143, 24, 0.883);
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .orders-history > div {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+    }
+}

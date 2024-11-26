@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; 
+    background: #f7f7f7;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #181818;
+    padding: 10px 20px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header > nav {
+    display: flex;
+    gap: 20px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+main {
+    padding-top: 80px; 
+}
+
+@media screen and (max-width: 500px) {
+    .burger {
+        display: flex;
+    }
+
+    header > nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 10px; 
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%; 
+    }
+
+    header > nav.active {
+        display: flex;
+    }
+
+    header > nav > a {
+        margin-bottom: 10px;
+    }
+}
